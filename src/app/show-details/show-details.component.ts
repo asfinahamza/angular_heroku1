@@ -19,5 +19,14 @@ export class ShowDetailsComponent implements OnInit {
     console.log(this.data);
     })
   }
+  deleteData(i:any){
+    console.log(i);
+    this.pass.delData(i).subscribe(r=>{
+      alert(r);
+      this.showData();
+      
+      })
 
+  }
+ 
 }

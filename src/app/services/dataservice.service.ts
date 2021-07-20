@@ -17,4 +17,7 @@ export class DataserviceService {
   getData(){
     return this.client.get('https://cybersquare.herokuapp.com/user/');
   }
+  delData(id:any){
+    return this.client.delete('https://cybersquare.herokuapp.com/user/'+id);
+  }
 }

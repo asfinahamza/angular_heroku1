@@ -13,7 +13,7 @@
         <td>{{asg['dob']}}</td>
         <td>{{asg['gender']}}</td>
         <td>{{asg['email']}}</td>
-        <td><button>delete</button></td>
-        <td><button>update</button></td>
+        <td><button mat-button color="primary" (click)="deleteData(asg.id)">delete</button></td>
+        <td><button mat-button color="warn">update</button></td>
     </tr>
 </table>
