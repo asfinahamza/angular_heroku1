@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵɵqueryRefresh } from '@angular/core';
 import { DataserviceService } from '../services/dataservice.service';
 @Component({
   selector: 'app-show-details',
@@ -16,6 +16,7 @@ export class ShowDetailsComponent implements OnInit {
   showData(){
     this.pass.getData().subscribe(res=>{
     this.data=res;
+    this.showData()
     console.log(this.data);
     })
   }
