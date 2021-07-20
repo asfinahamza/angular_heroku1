@@ -1,0 +1,19 @@
+<table align="center" width="50%" border="1">
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th colspan="2">operation</th>
+    </tr>
+    <tr *ngFor="let asg of data">
+        <td>{{asg['f_name']}}</td>
+        <td>{{asg['l_name']}}</td>
+        <td>{{asg['dob']}}</td>
+        <td>{{asg['gender']}}</td>
+        <td>{{asg['email']}}</td>
+        <td><button>delete</button></td>
+        <td><button>update</button></td>
+    </tr>
+</table>

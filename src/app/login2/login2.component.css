@@ -1,0 +1,12 @@
+#loginmsg{
+    border: hidden;
+}
+div{
+    text-align: center;
+    
+    margin: 50px 500px 20px 500px;
+    padding: 20px;
+    box-shadow: rgb(53, 70, 70);
+    box-sizing: 20px 20px;
+    
+}

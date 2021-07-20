@@ -1,0 +1,45 @@
+
+
+    
+<div class="div-main">
+    <mat-card>
+            
+        <mat-card-title class="title">register here</mat-card-title>
+       
+            
+   
+            <form action="" (ngSubmit)="insertFn()">
+                <mat-form-field class="example-full-width" appearance="standard">
+                    <mat-label>First name</mat-label>
+                    <input matInput placeholder="enter your first name" required [(ngModel)]="res.f_name" name="f_name">
+                </mat-form-field><br>
+                <mat-form-field class="example-full-width" appearance="standard">
+                    <mat-label>last name</mat-label>
+                    <input matInput placeholder="enter your last name" required  [(ngModel)]="res.l_name" name="l_name">
+                </mat-form-field><br>
+                <mat-form-field class="example-full-width" appearance="standard">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker"  [(ngModel)]="res.dob" name="dob">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field><br>
+                <mat-radio-group aria-label="Select an option" [(ngModel)]="res.gender" name="gender">
+                    <mat-radio-button class="radio-gender" value="male">Male</mat-radio-button>
+                    <mat-radio-button class="radio-gender" value="female">Female</mat-radio-button>
+                  </mat-radio-group><br>
+                <mat-form-field class="example-full-width" appearance="standard">
+                    <mat-label>email *</mat-label>
+                    <input matInput placeholder="enter your last name" [(ngModel)]="res.email" name="email">
+                </mat-form-field><br>
+                
+            
+           
+                <button mat-raised-button color="primary">submit</button>
+                <button mat-raised-button color="warn">cancel</button>
+            </form>
+        
+    </mat-card>
+    
+</div>
+
+     

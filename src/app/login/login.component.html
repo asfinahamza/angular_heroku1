@@ -1,0 +1,31 @@
+<input type="text" id="username" name="username" placeholder="name:">
+<button>login</button>
+<p>{{myname}}</p>
+<input type="text" id="example"><br>
+<input type="text" [id]="myid"><br>
+<input type="text" [disabled]="testvar">
+<button (click)="testFun()">click</button><br>
+<input type="text" name="" [(ngModel)]="favcolor">
+<button (click)="printText()">click</button>
+<!-- {{favcolor}} -->
+<hr>
+<input type="text"[(ngModel)]="ngmodel1">
+<div [style.background-color]="ngmodel1">
+
+</div> 
+
+<!-- ngif -->
+<h1 *ngIf = "false">ngif heading</h1>
+ <!--if else block method-1-->
+<h1 *ngIf = 'false; else elseblock'>else heading</h1>
+<ng-template #elseblock>
+    <h1>else false heading</h1>
+</ng-template>
+<!--if else block method-2-->
+<div *ngIf='setDisplay; then thenBlock; else elseBlock'></div>
+<ng-template #elseBlock>
+    <h1>else block</h1>
+</ng-template>
+<ng-template #thenBlock>
+    <h1>then block</h1>
+</ng-template> 
